@@ -1,10 +1,27 @@
 {
   "compilerOptions": {
-    "types": ["mocha", "chai"],
-    "typeRoots": ["./node_modules/@types"],
-    "lib": ["es2015"],
-    "module": "commonjs",
-    "target": "es6",
-    "esModuleInterop": true
-  }
+    "allowJs": true,
+    "checkJs": false,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "."
+  },
+  "include": [
+    "app/components/**/*",
+    "app/pages/**/*",
+    "app/hooks/**/*",
+    "app/utils/**/*",
+    "app/constants/**/*",
+    "app/styles/**/*",
+    "next.config.js"
+  ],
+  "exclude": ["node_modules", "dist", ".next"]
 }
